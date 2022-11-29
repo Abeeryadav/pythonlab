@@ -1,0 +1,12 @@
+def toggle(phrase):
+    for letter in phrase:
+        if letter not in "aeiou":
+            letter = letter.upper()
+        elif letter in "AEIOU":
+            letter = letter.lower()
+        else:
+            letter = letter.upper()
+    return phrase
+
+
+print(toggle(input("Enter a phrase: ")))
